@@ -1,0 +1,23 @@
+.porfolio {
+	height: 505px;
+	background: radial-gradient(circle closest-side at 75% 50%,#ffcc00,@color-osnova;);
+	padding-top:20px;
+	z-index:2;
+
+	&-row {
+		max-width: 960px;
+		height: 467px;
+		background: rgba(0,0,0,0.01);
+		margin:@margin_center;
+		z-index:5;
+	}
+}
+.porfolio::after {
+	content:"";
+	display:block;
+	height:502px;
+	position: relative;
+	z-index:0;
+	bottom:100%;
+	background:radial-gradient(circle closest-side at 25% 50%,#ffcc00,rgba(0,0,0,0.01););
+}

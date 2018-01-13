@@ -1,0 +1,146 @@
+.polMenFemRR {
+	z-index:1;
+}
+.rightPorfolio {
+  background:#fff;
+}
+
+.radioPol {
+  display:flex;
+  width:98px;
+  height:50px;
+
+  &-knopk2 {
+    margin-left: 13px;
+  }
+}
+.radio1,
+.radio2 {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+.radio1 + label,
+.radio2 + label {
+  cursor: pointer;
+}
+.radio1:not(checked),
+.radio2:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.radio1:not(checked) + label,
+.radio2:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 35px;
+}
+.radio1:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  z-index:5;
+  top: -3px;
+  left: 0;
+  width: 48px;
+  height: 36px;
+  border: 1px solid #CDD1DA;
+  -webkit-border-radius: 50% 0 0 50%;
+  border-radius: 50% 0 0 50%;
+  background: rgba(0,0,0,.01);
+}
+.radio1:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 43px;
+  height: 31px;
+  -webkit-border-radius: 50% 0 0 50%;
+  border-radius: 50% 0 0 50%;
+  background:   @color-osnova;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: all .2s;
+}
+.radio2:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  z-index:5;
+  top: -3px;
+  left: 0;
+  width: 48px;
+  height: 36px;
+  border: 1px solid #CDD1DA;
+  -webkit-border-radius: 0 50% 50% 0;
+  border-radius: 0 50% 50% 0;
+  background: rgba(0,0,0,.01);
+}
+.radio2:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 43px;
+  height: 31px;
+  -webkit-border-radius: 0 50% 50% 0;
+  border-radius: 0 50% 50% 0;
+  background:   @color-osnova;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: all .2s;
+}
+.radio1:checked + label:after,
+.radio2:checked + label:after {
+  opacity: 1;
+}
+.radio1:focus + label:before,
+.radio2:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+
+
+.imgStart {
+	position:relative;
+	display: block;
+	top:-13px;
+	left:18px;
+	z-index:2;
+}
+.imgStart2 {
+  position:relative;
+  display: block;
+  top:-41px;
+  left:18px;
+  z-index:1;
+}
+.imgStart3 {
+  position:relative;
+  display: block;
+  top:-13px;
+  left:18px;
+  z-index:1;
+}
+.imgStart4 {
+  position:relative;
+  display: block;
+  top:-44px;
+  left:16px;
+  z-index:2;
+}
+
+#contactChoice1:checked ~ .imgStart {
+  opacity:0;
+}
+#contactChoice2:checked ~ .imgStart4 {
+  opacity:0;
+}
+#contactChoice3:checked ~ .imgStart {
+  opacity:0;
+}
+#contactChoice4:checked ~ .imgStart4 {
+  opacity:0;
+}
+
+h2 {
+  color: linear-gradient( to top,@color-osnova,#fff);
+}
