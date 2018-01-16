@@ -1,0 +1,91 @@
+.buttonBookmarks {
+	.flexbox;
+	width:50px;
+}
+
+.buttonVkladka {
+	margin-left: 40px;
+	max-height:30px;
+	max-width:60px;
+
+	&-buttonR {
+		width:100%;
+		height:100%;
+		background:transparent;
+		border-radius: 0 8px 8px 0;
+		border: 15px solid #e7e8e8;
+
+		&::before {
+	    	width: 0;
+	        height: 0;
+	        display: block;
+	        position: relative;
+	        content: "";
+	        border-left: 15px solid #e7e8e8;
+	        border-top: 15px solid transparent;
+	        border-bottom: 15px solid #e7e8e8;
+	        border-right: 15px solid #e7e8e8;
+	        transform: rotate(-90deg);
+	        top:-15px;
+	        left:-45px;
+	    }  
+	}
+	&-buttonC {
+		width: 100%;
+	    height: 100%;
+	    background:transparent;
+		border: 15px solid @color-osnova;
+
+	    &::after {
+	    	width: 0;
+	        height: 0;
+	        display: block;
+	        position: relative;
+	        content: "";
+	        border-left: 15px solid transparent;
+	        border-top: 15px solid transparent;
+	        border-bottom: 15px solid @color-osnova;
+	        border-right: 15px solid transparent;
+	        transform: rotate(90deg);
+	        top:-45px;
+	        left:45px;
+	    }
+	    
+	    &::before {
+	    	width: 0;
+	        height: 0;
+	        display: block;
+	        position: relative;
+	        content: "";
+	        border-left: 15px solid @color-osnova;
+	        border-top: 15px solid transparent;
+	        border-bottom: 15px solid @color-osnova;
+	        border-right: 15px solid @color-osnova;
+	        transform: rotate(-90deg);
+	        top:-15px;
+	        left:-45px;
+	    }  
+	}
+	&-buttonL {
+		width: 100%;
+	    height: 100%;
+	    background:transparent;
+		border: 15px solid #c0c2c2;
+		border-radius: 8px 0 0 8px;
+
+        &::after {
+	    	width: 0;
+	        height: 0;
+	        display: block;
+	        position: relative;
+	        content: "";
+	        border-left: 15px solid transparent;
+	        border-top: 15px solid transparent;
+	        border-bottom: 15px solid #c0c2c2;
+	        border-right: 15px solid transparent;
+	        transform: rotate(90deg);
+	        top:-15px;
+	        left:45px;
+	    }
+	}
+}

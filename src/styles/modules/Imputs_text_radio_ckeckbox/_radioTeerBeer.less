@@ -1,0 +1,31 @@
+.radio {
+	display: none;
+}
+.radio-custom {
+	width: 16px;
+	height: 16px;
+	border: 1px solid @color-border;
+	border-radius: 3px;
+	.box-shadow(@box-chadov-osnov);
+	position: relative;
+}
+.radio-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+.radio:checked + .radio-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	background: @color-osnova;
+	border-radius: 2px;
+}
+.radio-custom,
+.radio:checked + .radio-custom::before {
+	border-radius: 50%;
+}

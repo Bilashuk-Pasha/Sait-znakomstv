@@ -18,7 +18,7 @@
 	<main class="main">
 		<div class="porfolio container-fluid">
 			<div class="row porfolio-row">
-				<div class="col-lg-6 pl-0 pr-0">
+				<div class="col-lg-6 porfolio-row-col pl-0 pr-0">
 					<div id="carouselExampleIndicators" class="carousel slide porfolioCaruosel" data-ride="carousel">
 						<ol class="carousel-indicators porfolioCaruosel-indicator">
 							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -48,15 +48,15 @@
 				</div>
 				<div class="col-lg-6 rightPorfolio">
 					<div class="row nameAnkem">
-						<div class="col-lg-12 text-center">
-							<h2>Join us now. lt's FREE</h2>
+						<div class="col-12 nameAnkem-col text-center">
+							<h1>Join us now. lt's FREE</h1>
 						</div>
 					</div>
-					<div class="row polMenFem">
-						<div class="col-lg-2 mt-3">
-							<p>l am</p>
+					<div class="row polMenFem flex-nowrap">
+						<div class="col-2 mt-3 text-center">
+							<p>l`am</p>
 						</div>
-						<div class="polMenFemRR text-center col-lg-3">
+						<div class="polMenFemRR text-center col-3">
 							<div class="radioPol">
 								<div class="radioPol-knopk1">
 									<input type="radio" class="radio1" id="contactChoice1" name="contact" checked>
@@ -72,10 +72,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 text-center mt-3">
+						<div class="col-3 text-center mt-3 text-center">
 							<p> lookingfor</p>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-3 text-right">
 							<div class="radioPol">
 								<div class="radioPol-knopk1">
 									<input type="radio" class="radio1" id="contactChoice3" name="contact1">
@@ -91,41 +91,256 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-1">
+						</div>
+					</div>
+					<div class="row PoiskName flex-nowrap mt-2">
+						<div class="col-2 PoiskName-col text-center">
+							<p>Name</p>
+						</div>
+						<div class="col-9 PoiskName-col">
+							<input class="PoiskName-col-input" type="search" name="Name" id="PoiskName">
+							<label class="PoiskName-col-label" for="PoiskName"></label>
+						</div>
+						<div class="col-1 nameClose">
+							<button type="button" class="close" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					</div>
+					<div class="row dateBirth mt-2">
+						<div class="col-2 dateBirth-col text-center">
+							<p>age</p>
+						</div>
+						<div class="col-9 dateBirth-col">
+						</div>
+						<div class="col-1">
+						</div>
+					</div>
+					<div class="row flex-nowrap">
+						<div class="col-2 text-center">
+							<p>City</p>
+						</div>
+						<div class="col-9 nameCityDrobown"> 
+							<div class="form-group nameCityDrobown-content">
+								<select class="form-control nameCityDrobown-content-select" id="exampleFormControlSelect1">
+									<option>London</option>
+									<option>Paris</option>
+									<option>Mexiko</option>
+									<option>Dnepr</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-2">
+						</div>
+						<div class="col-5 checkboxRadio">
+							<label>
+								<input class="checkbox" type="checkbox" name="checkbox1">
+								<span class="checkbox-custom"></span>
+								<span class="label">l`m cool</span>
+							</label>
+							<label>
+								<input class="checkbox" type="checkbox" name="checkbox2">
+								<span class="checkbox-custom"></span>
+								<span class="label">Life`s good</span>
+							</label>
+						</div>
+						<div class="col-5 checkboxRadio">
+							<label>
+								<input class="radio" type="radio" name="radio1">
+								<span class="radio-custom"></span>
+								<span class="label">Tee</span>
+							</label>
+							<label>
+								<input class="radio" type="radio" name="radio1" checked>
+								<span class="radio-custom"></span>
+								<span class="label">Beer</span>
+							</label>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-2">
+						</div>
+						<div class="col-9 buttonStart mb-4">
+							<button class="buttonStart-button" type="submit">Start Now</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container list">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur.
-			<div class="divlorem1">
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+		<div class="container avtoBiografia">
+			<div class="row avtoBiografia-row">
+				<div class="col-6 avtoBiografia-col">
+					<div class="fotoColo">
+						<h2 class="mb-4">Code this block</h2>
+						<img class="fotoColo-img" src="assets/img/modelColo.png">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						</p>
+					</div>
+				</div>
+				<div class="col-1">
+				</div>
+				<div class="col-5 text-center">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="mb-4">Users List</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 nameMiniCarousel">
+							<div id="minCarus1" class="miniCarousel carousel slide" data-ride="carousel">
+								<div class="miniCarousel-content carousel-inner">
+									<div class="miniCarousel-content-inet carousel-item active">
+										<img class="d-block w-100" src="assets/img/miniFoto.png" alt="Первый слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto2.png" alt="Второй слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto3.png" alt="Третий слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto4.png" alt="Четвертый слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto5.png" alt="Пятый слайд">
+									</div>
+								</div>
+							</div>
+							<div id="minCarus2" class="miniCarousel carousel slide" data-ride="carousel">
+								<div class="miniCarousel-content carousel-inner">
+									<div class="miniCarousel-content-inet carousel-item active">
+										<img class="d-block w-100" src="assets/img/miniFoto2.png" alt="Первый слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto3.png" alt="Второй слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto4.png" alt="Третий слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto5.png" alt="Четвертый слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto.png" alt="Пятый слайд">
+									</div>
+								</div>
+							</div>
+							<div id="minCarus3" class="miniCarousel carousel slide" data-ride="carousel">
+								<div class="miniCarousel-content carousel-inner">
+									<div class="miniCarousel-content-inet carousel-item active">
+										<img class="d-block w-100" src="assets/img/miniFoto3.png" alt="Первый слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto4.png" alt="Второй слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto5.png" alt="Третий слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto.png" alt="Четвертый слайд">
+									</div>
+								</div>
+							</div>
+							<div id="minCarus4" class="miniCarousel carousel slide" data-ride="carousel">
+								<div class="miniCarousel-content carousel-inner">
+									<div class="miniCarousel-content-inet carousel-item active">
+										<img class="d-block w-100" src="assets/img/miniFoto4.png" alt="Первый слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto5.png" alt="Второй слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto.png" alt="Третий слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto2.png" alt="Четвертый слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto3.png" alt="Пятый слайд">
+									</div>
+								</div>
+							</div>
+							<div id="minCarus5" class="miniCarousel carousel slide" data-ride="carousel">
+								<div class="miniCarousel-content carousel-inner">
+									<div class="miniCarousel-content-inet carousel-item active">
+										<img class="d-block w-100" src="assets/img/miniFoto5.png" alt="Первый слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto.png" alt="Второй слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto2.png" alt="Третий слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto3.png" alt="Четвертый слайд">
+									</div>
+									<div class="miniCarousel-content-inet carousel-item">
+										<img class="d-block w-100" src="assets/img/miniFoto4.png" alt="Пятый слайд">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-lg-7 d-flex align-items-end">
+							<div class="buttonBookmarks">
+								<div class="buttonVkladka"><button class="buttonVkladka-buttonL"></button></div>
+								<div class="buttonVkladka"><button class="buttonVkladka-buttonC"></button></div>
+								<div class="buttonVkladka"><button class="buttonVkladka-buttonR"></button></div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="borderColo">
+								<p>37%</p>
+							</div>
+							<div class="five d-flex justify-content-center">
+								<div class="border-five"></div>
+								<div class="border-five"></div>
+								<div class="border-five"></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="divlorem2"> Excepteur sint occaecat cupidatat non
+		</div>
+		<div class="container namelist">
+			<h2 class="ml-3 mb-4">How to succed in online dating</h2>
+			<div class="container list">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+				<div class="divlorem1">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+				<div class="divlorem2"> Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<p class="plorem1">1.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<a class="aLorem" href="#">Cupdid.com</a>!</p>
+				<p class="plorem1">2.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				<p class="plorem1">3.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				<p class="plorem1">4.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>	
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esselum dolore eu fugiat nulla pariatu
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<p class="plorem2">
+					<a class="triangle" href="#"></a><a class="aLorem" href="#">Click here to view more</a>
+				</p>
 			</div>
-			<p class="plorem1">1.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<a class="aLorem" href="#">Cupdid.com</a>!</p>
-			<p class="plorem1">2.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-			<p class="plorem1">3.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-			<p class="plorem1">4.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>	
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esselum dolore eu fugiat nulla pariatu
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			<p class="plorem2">
-				<a class="triangle" href="#"></a><a class="aLorem" href="#">Click here to view more</a>
-			</p>
 		</div>
 	</main>
-
 	<!-- Footer -->
 	<footer class="footer container-fluid">
+		<p class="footer-brend">Web Coder</p>
+		<p class="footer-god">2018</p>
 	</footer>
 
 	<!-- Optional JavaScript -->
@@ -135,6 +350,3 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-

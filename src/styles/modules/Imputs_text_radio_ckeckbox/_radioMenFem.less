@@ -1,14 +1,26 @@
+.nameAnkem {
+
+  &-col {
+    background: linear-gradient(to bottom, #fff, @color-osnova);
+    padding-right: 0;
+    padding-left: 0;
+  }
+  h1 {
+    color: #000;
+    background: #fff;
+    mix-blend-mode: lighten;
+  }
+}
 .polMenFemRR {
 	z-index:1;
 }
 .rightPorfolio {
   background:#fff;
 }
-
 .radioPol {
   display:flex;
   width:98px;
-  height:50px;
+  max-height:50px;
 
   &-knopk2 {
     margin-left: 13px;
@@ -41,7 +53,7 @@
   z-index:5;
   top: -3px;
   left: 0;
-  width: 48px;
+  width: 45px;
   height: 36px;
   border: 1px solid #CDD1DA;
   -webkit-border-radius: 50% 0 0 50%;
@@ -53,7 +65,7 @@
   position: absolute;
   top: 0;
   left: 3px;
-  width: 43px;
+  width: 40px;
   height: 31px;
   -webkit-border-radius: 50% 0 0 50%;
   border-radius: 50% 0 0 50%;
@@ -68,7 +80,7 @@
   z-index:5;
   top: -3px;
   left: 0;
-  width: 48px;
+  width: 45px;
   height: 36px;
   border: 1px solid #CDD1DA;
   -webkit-border-radius: 0 50% 50% 0;
@@ -80,7 +92,7 @@
   position: absolute;
   top: 0;
   left: 3px;
-  width: 43px;
+  width: 40px;
   height: 31px;
   -webkit-border-radius: 0 50% 50% 0;
   border-radius: 0 50% 50% 0;
@@ -97,8 +109,6 @@
 .radio2:focus + label:before {
   box-shadow: 0 0 0 3px rgba(255,255,0,.5);
 }
-
-
 .imgStart {
 	position:relative;
 	display: block;
@@ -117,17 +127,16 @@
   position:relative;
   display: block;
   top:-13px;
-  left:18px;
+  left:13px;
   z-index:1;
 }
 .imgStart4 {
   position:relative;
   display: block;
   top:-44px;
-  left:16px;
+  left:12px;
   z-index:2;
 }
-
 #contactChoice1:checked ~ .imgStart {
   opacity:0;
 }
@@ -139,8 +148,4 @@
 }
 #contactChoice4:checked ~ .imgStart4 {
   opacity:0;
-}
-
-h2 {
-  color: linear-gradient( to top,@color-osnova,#fff);
 }

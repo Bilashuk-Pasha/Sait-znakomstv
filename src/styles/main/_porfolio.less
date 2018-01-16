@@ -3,13 +3,24 @@
 	background: radial-gradient(circle closest-side at 75% 50%,#ffcc00,@color-osnova;);
 	padding-top:20px;
 	z-index:2;
+	@media @mobile_992 {
+		height:935px;
+	}
 
 	&-row {
 		max-width: 960px;
-		height: 467px;
+		max-height: 467px;
 		background: rgba(0,0,0,0.01);
 		margin:@margin_center;
 		z-index:5;
+
+		&-col {
+			border-right: 1px solid @color-border;
+			@media @mobile_992 {
+				border-right: none;
+				margin-bottom: 10px;
+			}
+		}
 	}
 }
 .porfolio::after {
@@ -20,4 +31,13 @@
 	z-index:0;
 	bottom:100%;
 	background:radial-gradient(circle closest-side at 25% 50%,#ffcc00,rgba(0,0,0,0.01););
+
+	@media @mobile_992 {
+		display:none;
+	}
+}
+.checkboxRadio {
+	display: flex;
+	flex-direction: column;
+	z-index:1;
 }
